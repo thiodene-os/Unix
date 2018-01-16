@@ -23,6 +23,12 @@ anonymous_enable=NO
 # -> Save & Exit vsftpd.conf in VI Editor
 [ESC] + ZZ
 sudo service vsftpd restart
+# ------------------------------------
+# -> Sometimes FTP (connection) still doesnt work after installation
+# -> Verify that either listen or listen_ipv6 is uncommented and equals YES
+listen=YES
+# -> or
+listen_ipv6=YES
 
 ### Install MySQL
 sudo apt-get install mysql-server
