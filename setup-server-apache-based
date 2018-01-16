@@ -1,0 +1,56 @@
+# From command Line:
+
+### Install or Update APACHE
+sudo apt-get update
+sudo apt-get install apache2
+
+### Install PHP
+sudo apt-get install php7.0
+sudo apt-get install libapache2-mod-php7.0
+sudo service apache2 restart
+
+## Install FTP
+sudo apt-get install vscftp
+sudo adduser thiodene 
+# (+password: thiodenepassword)
+sudo vi /etc/vsftpd.conf
+# -> Add the line at the end of the file
+allow_writeable_chroot=YES
+# -> uncomment the following line
+write_enable=YES
+# -> Disable Anonymous Connection
+anonymous_enable=NO
+# -> Save & Exit vsftpd.conf in VI Editor
+[ESC] + ZZ
+sudo service vsftpd restart
+
+### Install MySQL
+sudo apt-get install mysql-server
+#-> user: root password: rootpassword
+sudo service mysql start
+sudo service apache2 restart
+
+### Install PHPMyAdmin
+sudo apt-get install phpmyadmin
+# -> Use apache2 as web server
+# -> Refuse dbconfig
+sudo vi /etc/apache2/apache2.conf
+# -> Add the following line at the end of the file
+Include /etc/phpmyadmin/apache.conf
+# -> Save & Exit apache2.conf in VI Editor
+[ESC] + ZZ
+sudo vi /etc/phpmyadmin/config.inc.php
+# -> Add the following line at the end of it
+$cfg['LoginCookieValidity'] = 36000;
+[ESC] + ZZ
+sudo service apache2 restart
+sudo vi /etc/php/7.0/apache2/php.ini
+# -> Set the following parameters ON
+display_errors = On
+display_startup_errors = On
+post_max_size = 64M
+memory_limit = 128M
+upload_max_fileseize = 64M
+[ESC] + ZZ
+sudo service apache2 restart
+
