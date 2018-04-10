@@ -1,0 +1,6 @@
+# Now that gdrive has been installed execute it with test upload
+
+# execute gdrive backup from command line:
+sudo ./gdrive-snapshot.sh
+
+# execute gdrive backup from CRON
