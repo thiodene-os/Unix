@@ -1,0 +1,16 @@
+# Install GDrive based on a chosen GMAIL account to be specified later after the installation
+
+# Go to the main folder for installation
+cd ~
+
+# Download the SSL executable
+wget https://docs.google.com/uc?id=0B3X9GlR6EmbnWksyTEtCM0VfaFE&export=download
+ 
+# Rename that file to gdrive 
+mv uc?id=0B3X9GlR6EmbnWksyTEtCM0VfaFE&export=download gdrive
+
+# Make gdrive executable
+chmode +x gdrive
+
+# Install gdrive on Linux
+sudo install gdrive /usr/local/bin/gdrive
