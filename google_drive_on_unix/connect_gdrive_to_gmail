@@ -1,0 +1,34 @@
+==> Install Google Drive on the Server
+
+
+in LINUX Environment:
+
+(1) SSH on to your linux box and download the Linux version of gdrive from GitHub.
+
+cd ~
+wget https://docs.google.com/uc?id=0B3X9GlR6EmbnWksyTEtCM0VfaFE&export=download
+
+(2) You should see a file: "uc=0B3X9GlR6EmbnWksyTEtCM0VfaFE". Rename this file to gdrive.
+
+mv uc\?id\=0B3X9GlR6EmbnWksyTEtCM0VfaFE gdrive
+
+(3) Assign this file executable rights.
+
+chmod +x gdrive
+
+(4) Install the gdrive to your usr folder
+
+sudo install gdrive /usr/local/bin/gdrive
+
+(5) Tell Google Drive to allow this program to connect to your account. To do this run:
+
+gdrive list
+
+(6) Copy the URL given by this command to the browser where GMAIL account is connected.
+(7) This will give you the security code, ccopy and paste it in the command line:
+
+(command Line area) Enter verification code: 
+
+(8) Test it with one upload + Check your Google Drive account to see if the file is there
+
+gdrive upload backups.tar.gz
