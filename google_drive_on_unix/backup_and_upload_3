@@ -4,3 +4,13 @@
 sudo ./gdrive-snapshot.sh
 
 # execute gdrive backup from CRON
+# On the command line open the CRONTAB
+sudo crontab -e
+
+# Select the VIM Editor
+(Number 3)
+
+# Add the following command to run the gdrive snapshot backup (To be verified!)
+* * * * *   sh /var/www/html/snapshot/gdrive-snapshot.sh
+# or
+* * * * *   wget -O /var/www/html/snapshot/gdrive-snapshot.sh
