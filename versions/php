@@ -1,0 +1,8 @@
+# Create a php file in the HTML directory called version.php
+# Content is as follows:
+
+<?php
+
+phpinfo() ;
+
+?>
