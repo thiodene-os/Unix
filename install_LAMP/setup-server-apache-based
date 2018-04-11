@@ -10,7 +10,7 @@ sudo apt-get install libapache2-mod-php7.0
 sudo service apache2 restart
 
 ## Install FTP
-sudo apt-get install vscftp
+sudo apt-get install vsftpd
 sudo adduser thiodene 
 # (+password: thiodenepassword)
 sudo vi /etc/vsftpd.conf
