@@ -1,0 +1,10 @@
+# This section shows you how to install Multiple PHP versions on Linux Ubuntu 16 and above 
+# while only PHP7.0 can be installed normally
+
+# Sources
+https://lornajane.net/posts/2016/php-7-0-and-5-6-on-ubuntu
+https://askubuntu.com/questions/761713/how-can-i-downgrade-from-php-7-to-php-5-6-on-ubuntu-16-04/762161#762161
+https://askubuntu.com/questions/756879/cant-install-php5-on-ubuntu-16-04
+
+# Linux/Ubuntu version (useful)
+https://superuser.com/questions/11008/how-do-i-find-out-what-version-of-linux-im-running
