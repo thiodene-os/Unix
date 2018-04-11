@@ -1,0 +1,29 @@
+
+# PHP 7.0 (and 5.6) on Ubuntu
+
+# PHP 7 is released but for those of us who don't usually compile our own PHP, 
+# it can be a long wait for our preferred distro to release the packages we want. 
+# For Ubuntu, I'm using a PPA which allows both PHP 5.6 and PHP 7.0 to be installed, including things like extensions, at the same time. 
+# It was very easy to set up 
+# (I'm running Ubuntu 15.10 but this process should also work on older versions back to at least 14.04 which is the previous LTS) 
+# so here's a quick walkthrough of what I did.
+
+# Add the PPA to the setup 
+sudo add-apt-repository ppa:ondrej/php
+
+# Update the version
+sudo apt-get update
+
+# Install New PHP versions
+sudo apt-get install php5.6 php7.0
+
+# Configure and switch version
+# To have PHP 7 running:
+sudo a2dismod php5.6
+sudo a2enmod php7.0
+sudo service apache2 restart
+# To have PHP 5.6 running:
+sudo a2dismod php7.0
+sudo a2enmod php5.6
+sudo service apache2 restart
+
