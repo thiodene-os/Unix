@@ -17,11 +17,22 @@ sudo apt-get update
 # Install New PHP versions
 sudo apt-get install php5.6 php7.0
 
-# Update PHP 7 version(for example); do the same for each PHP versions
+# Issue with mbstring Notifications (while trying to display PHPMyAdmin on the browser)
+sudo apt-get install php-mbstring php-gettext         (For PHP 7.0)
+sudo apt-get install php5.6-mbstring php-gettext
+# In PHP.INI uncomment the following (remove the ; and save and restart apache2)
+;extension=php_mbstring.dll
+
+# Issue with mysqli/mysql Notifications (while trying to display PHPMyAdmin on the browser)
+# -> Update PHP 7 version(for example); do the same for each PHP versions (3rd line)
 sudo apt update
 sudo apt upgrade
 sudo apt install php7.0-mysql
 sudo apt autoremove
+# In PHP.INI uncomment the following (remove the ; and save and restart apache2)
+;extension=php_exif.dll       Must be after mbstring as it depends on it
+;extension=php_mysql.dll
+;extension=php_mysqli.dll
 
 # Configure and switch version
 # To have PHP 7 running:
