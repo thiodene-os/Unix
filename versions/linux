@@ -1,0 +1,8 @@
+# For check Linux, execute the commands:
+
+uname
+uname -or
+lsb_release -irc
+
+# Original
+https://superuser.com/questions/11008/how-do-i-find-out-what-version-of-linux-im-running
