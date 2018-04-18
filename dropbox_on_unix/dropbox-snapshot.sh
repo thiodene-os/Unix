@@ -25,7 +25,8 @@ mysql --skip-column-names -u root -p'azarbod98765' -e 'show databases;' | while 
 # Create a tar.gz archive, consisting of all database backups
 tar -zcf /mapletools_$( date '+%Y-%m-%d' ).tar.gz /$( date '+%Y-%m-%d' )
 
-# Transfer the tar.gz archive to Dropbox
+# Transfer the tar.gz archive to Dropbox (after delecting the old file if necessary)
+su ubuntu -c "/usr/local/bin/dropbox_uploader delete /mapletools_*"
 su ubuntu -c "/usr/local/bin/dropbox_uploader upload /mapletools_$( date '+%Y-%m-%d' ).tar.gz /"
 
 # Remove the temporary html files directory
