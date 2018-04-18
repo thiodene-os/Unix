@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Submit a CRON with ROOT ----> "sudo crontab -e"
+# or execute the file with the command line ---> "sudo ./dropbox-snapshot.sh"
 
 # Create a backup of all MySQL databases
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
