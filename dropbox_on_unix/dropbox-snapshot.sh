@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# Submit a CRON with ROOT ----> sudo crontab -e
+
 # Create a backup of all MySQL databases
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
