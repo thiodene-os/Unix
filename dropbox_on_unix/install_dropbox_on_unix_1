@@ -13,3 +13,11 @@ chmod +x dropbox_uploader.sh
 
 # Add the Token key:
 # View picture (dropbox_install_token.jpg)
+# From dropbox.com
+-> App key:      6a1jneb4lq6f32h
+-> App secret:   atr7k0yywppy59m
+-> Access Token: Jtoz6vugCpAAAAAAAAAAB3krDwSAd1ndagCiuCdMXOhun-O-6T6fhCyDBTNfHl2z
+
+# This completes Dropbox Uploader configuration. 
+# To check whether Dropbox Uploader is successfully authenticated, run the following command.
+./dropbox_uploader.sh info
