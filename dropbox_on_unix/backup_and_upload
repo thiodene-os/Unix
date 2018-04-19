@@ -1,0 +1,20 @@
+# Now that dropbox_uploader has been installed execute it with test upload
+
+# execute gdrive backup from command line:
+sudo ./dropbox-snapshot.sh
+or
+dropbox_uploader
+
+# execute dropbox backup from CRON
+# On the command line open the CRONTAB
+sudo crontab -e                          (User: Root)
+or
+sudo crontab -u ubuntu -e                (User: Ubuntu)
+
+# Select the VIM Editor
+(Number 3)
+
+# Add the following command to run the dropbox_uploader snapshot backup
+0 22 * * *   sh /var/www/html/snapshot/dropbox-snapshot.sh >> /var/www/html/snapshot/cron.log 2>&1             (User: Root)
+# or
+*/5 * * * * sh /var/www/html/snapshot/dropbox-snapshot_test.sh >> /var/www/html/snapshot/cron_test.log 2>&1    (User: Ubuntu)
