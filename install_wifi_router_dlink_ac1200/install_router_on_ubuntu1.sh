@@ -1,4 +1,6 @@
 # Compiling for Ubuntu (16.04)
+# Source:
+# https://github.com/abperiasamy/rtl8812AU_8821AU_linux
 
 # Download archive into temp directory
 sudo mkdir -p /tmp/t4u
