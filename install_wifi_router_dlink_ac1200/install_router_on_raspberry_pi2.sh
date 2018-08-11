@@ -1,4 +1,6 @@
 # Compiling for Raspberry Pi
+# Source
+https://github.com/abperiasamy/rtl8812AU_8821AU_linux
 
 # Install kernel headers and other dependencies.
 sudo apt-get install linux-image-rpi-rpfv linux-headers-rpi-rpfv dkms build-essential bc
