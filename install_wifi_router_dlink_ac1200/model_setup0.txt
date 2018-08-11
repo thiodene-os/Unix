@@ -1,0 +1,5 @@
+# Source
+http://cfyves.com/2015/03/17/how-to-install-d-link-dwa-182-wireless-ac1200-dual-band-usb-adapter-on-linux-ubuntu/
+
+# Follow the instructions for Linux Ubuntu 16.04 at that page written on the Readme:
+https://github.com/abperiasamy/rtl8812AU_8821AU_linux
