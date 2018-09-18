@@ -36,6 +36,13 @@ sudo apt-get install mysql-server
 sudo service mysql start
 sudo service apache2 restart
 
+# If bigger query INSERT memory is needed change the mysqld conf file:
+# Go to /etc/mysql/mysql.conf.d
+# open file mysqld.cnf and change the following values:
+key_buffer_size         = 256M
+max_allowed_packet      = 256M
+
+
 ### Install PHPMyAdmin
 sudo apt-get install phpmyadmin
 # -> Use apache2 as web server
