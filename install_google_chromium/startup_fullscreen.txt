@@ -1,1 +1,15 @@
-# Go to Startup Applications
+How to auto start Chromium in full screen mode to a website URL on Ubuntu OS?
+(Source: https://linux.tips/tutorials/how-to-auto-start-chromium-in-full-screen-mode-to-a-website-url-on-ubuntu-os)
+
+1. Click on Start menu on top left of the screen and search for “Startup Applications”
+
+2. Click on “Startup Applications” application icon, this will open “Startup Applications Preferences” window
+
+3. On the “Startup Applications Preferences” window, click “Add”:
+- Fill in the following information for the fields:
+Name:                   Autostart chromium
+Command:           chromium-browser http://www.google.com/ --start-fullscreen
+Comment:            none
+Next click “Add” to add this new startup program to the list of startup programs.
+
+4. Finished, reboot and make sure the OS boots up successfully to the given website url in fullscreen mode.
