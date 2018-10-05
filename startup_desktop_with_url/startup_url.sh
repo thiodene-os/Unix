@@ -1,5 +1,5 @@
 #Auto Start Firefox and Launch a URL by Default in Lubuntu 14.04
-# Use Upstart
+# Use Upstart (However, better Install Google Chrimium if you need on-boot fullscreen startup webpages)
 
 # Go to home folder
 cd ~
