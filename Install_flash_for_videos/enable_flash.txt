@@ -1,0 +1,7 @@
+Enable Flash Player Plugin
+- Once the above flash player package is installed, start ( restart if already open ) firefox browser and 
+navigate to: https://helpx.adobe.com/flash-player.html to test your Flash player installation.
+
+- Scroll down to section "5. Verify whether Flash Player is installed". 
+Hit "Activate Adobe Flash" and click on "Allow Now" to enable flash player only for a current website 
+or click "Allow and Remember" to enable Flash Player on all websites:
