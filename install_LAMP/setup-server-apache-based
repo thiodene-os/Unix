@@ -79,4 +79,5 @@ sudo service apache2 restart
 # Enable Sendmail for PHP to use mail()
 sudo apt-get update
 sudo apt-get install sendmail
+sudo service apache2 restart
 
