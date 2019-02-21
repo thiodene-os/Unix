@@ -76,3 +76,7 @@ sudo apt-get update
 sudo apt-get install php-curl
 sudo service apache2 restart
 
+# Enable Sendmail for PHP to use mail()
+sudo apt-get update
+sudo apt-get install sendmail
+
