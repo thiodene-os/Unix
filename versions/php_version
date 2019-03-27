@@ -1,0 +1,15 @@
+# 2 ways to check the PHP version:
+
+# Type the following command:
+php --version
+# Check result:
+"PHP 5.4.16 (cli) (built: Mar  7 2018 13:34:47) 
+Copyright (c) 1997-2013 The PHP Group
+Zend Engine v2.4.0, Copyright (c) 1998-2013 Zend Technologies"
+
+# Type the following command:
+php -v
+# Check result:
+"PHP 5.4.16 (cli) (built: Mar  7 2018 13:34:47) 
+Copyright (c) 1997-2013 The PHP Group
+Zend Engine v2.4.0, Copyright (c) 1998-2013 Zend Technologies"
