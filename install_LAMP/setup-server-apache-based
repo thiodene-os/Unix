@@ -59,7 +59,7 @@ sudo vi /etc/phpmyadmin/config.inc.php
 $cfg['LoginCookieValidity'] = 36000;
 [ESC] + ZZ
 sudo service apache2 restart
-sudo vi /etc/php/7.0/apache2/php.ini
+sudo vi /etc/php/7.2/apache2/php.ini
 # -> Set the following parameters ON
 display_errors = On
 display_startup_errors = On
