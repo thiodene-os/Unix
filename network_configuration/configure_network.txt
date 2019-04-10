@@ -1,0 +1,24 @@
+# Configure Network Interface Using Command-Line
+You can configure a network interface from the command line. 
+You configure your network client hosts with the command line by using commands to change your current settings 
+or by editing a number of system files.
+
+# Find Network Interface Card
+ls /sys/class/net
+
+# Configuring Static IP Address For Your Network Card
+# Configure a Static IP address by editing /etc/network/interfaces. 
+# Replace eth0 with your network interface card (see Find Network Interface Card). 
+sudo nano /etc/network/interfaces
+
+# The primary network interface
+auto eth0
+iface eth0 inet static
+address 192.168.2.33
+gateway 192.168.2.1
+netmask 255.255.255.0
+network 192.168.2.0
+broadcast 192.168.2.255
+
+# For these settings to take effect you need to restart your networking services. 
+sudo /etc/init.d/networking restart
