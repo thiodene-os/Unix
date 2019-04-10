@@ -1,0 +1,16 @@
+# The primary network interface
+auto enp2s0
+iface enp2s0 inet static
+address 192.168.1.23
+gateway 192.168.1.1
+netmask 255.255.255.0
+
+# How to get the GATEWAY
+ip route | grep default
+
+# How to get ADDRESS (IP)
+hostname -I
+
+# How to get NETMASK
+# usually:
+255.255.255.0
