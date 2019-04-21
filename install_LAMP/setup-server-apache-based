@@ -57,6 +57,7 @@ Include /etc/phpmyadmin/apache.conf
 sudo vi /etc/phpmyadmin/config.inc.php
 # -> Add the following line at the end of it
 $cfg['LoginCookieValidity'] = 36000;
+$cfg['ExecTimeLimit'] = 1200 ; (same as max_execution_time php.ini)
 [ESC] + ZZ
 sudo service apache2 restart
 sudo vi /etc/php/7.2/apache2/php.ini
@@ -66,7 +67,7 @@ display_startup_errors = On
 post_max_size = 64M
 memory_limit = 128M
 upload_max_fileseize = 64M
-max_execution_time = 300
+max_execution_time = 1200
 max_input_time = 300
 [ESC] + ZZ
 sudo service apache2 restart
